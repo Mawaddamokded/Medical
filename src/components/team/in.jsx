@@ -10,7 +10,7 @@ import teamImage3 from "../../assets/images/team/3.png";
 import Doctor from "./Doctor";
 
 class Team extends Component {
- state = {
+  state = {
     docteur: [],
   };
 
@@ -19,7 +19,7 @@ class Team extends Component {
       console.log(res);
       this.setState({ docteur: res.data });
     });
-  } 
+  }
 
   render() {
     return (

@@ -395,23 +395,25 @@ ul {
 }
 
 #arround {
-  border: 1px solid #166ab5;
+  border: 1px solid #8ec5d6;
 
   }
 
 
 #hero .container {
   /* position: relative; */
+  padding-top: 30px; 
+  padding-bottom: 30px; 
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding:auto;
   background-color: rgba(253, 253, 253, 0.631);
   border-radius: 20px;
-  border: 2px solid #166ab5;
-  margin-left: 15%;
+  border: 2px solid #8ec5d6;
+  margin-left: 13%;
   margin-right: 15%;
-  margin-top: 15%;
+  margin-top: 19%;
   /* padding-bottom: 5%; */
    
 }
@@ -663,22 +665,8 @@ ul {
   height: 120px;
   border-radius: 50%;
 }
-.video-play-button:before {
-  z-index: 0;
-  -webkit-animation: pulse-border 2000ms ease-out infinite;
-  -moz-animation: pulse-border 2000ms ease-out infinite;
-  -o-animation: pulse-border 2000ms ease-out infinite;
-  animation: pulse-border 2000ms ease-out infinite;
-  background: #ffffff;
-}
-.video-play-button:after {
-  z-index: 1;
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  transition: all 200ms ease;
-  background: rgba(96, 47, 255, 0.5);
-}
+
+
 .video-play-button:hover:after {
   background: #602fff;
 }
@@ -767,6 +755,7 @@ ul {
   background: transparent;
   border-width: 0 0 1px 0;
   border-radius: 0;
+  
   border-color: #ffffff;
   box-shadow: none;
   font-family: 'Quicksand', sans-serif;
@@ -1367,7 +1356,14 @@ ul {
   position: relative;
   margin-top:auto;
 }
- .tcd-team .team-member {
+
+/* .tcd-team .team-member {
+  width: '16%';
+  height: '15%';
+} */
+ .team-member {
+  position: relative;
+  margin-top:auto;
   width: '16%';
   height: '15%';
 }
@@ -1378,15 +1374,21 @@ ul {
   transition: all 0.5s ease 0s;
   border-radius: 50px;
   box-shadow: 0px 5px 25px 0px rgba(102, 54, 255, 0.1);
+
 }
 .tcd-team .single-team .team-img {
   position: relative ;
+
 }
 .tcd-team .single-team .team-img img {
   margin: 0 auto;
   border-radius: 50%;
   border: 5px solid #bfbfbf;
   transition: all 0.5s ease 0s;
+
+  width:  150px;
+  height: 150px;
+  object-fit: cover;
 }
 .tcd-team .single-team .team-img .team-info {
   padding: 25px 0 20px;
@@ -1419,11 +1421,11 @@ ul {
 }
 .tcd-team .single-team .social-info li {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 .tcd-team .single-team .social-info li a {
   color: #000000;
-  opacity: 0.75;
+  opacity: 0.50;
 }
 .tcd-team .single-team .social-info li a i {
   font-size: 16px;

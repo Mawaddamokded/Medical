@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'reactstrap';
 // Assets
 import callLogo from '../../assets/images/arrows/phone.svg';
-
+import { Link } from 'react-router-dom'
 function Header() {
 	return(
 	    <header id="tcd-header" className="tcd-header-1">
@@ -9,10 +9,11 @@ function Header() {
 	            <Container>
 				<Row>
 						<Col lg="1">
-							<div className="logo">
-								<a href="#">
+						<div className="logo">
+
+							<Link to="/">
 									<span>EMedical</span>
-								</a>
+								</Link>
 							</div>
 							<button 
 								className="mobile-menu-icon" 
@@ -26,14 +27,14 @@ function Header() {
 						<Col lg="11">
 							<div className="mainmenu">
 								<ul id="onepage-menu" className="nav-menu onepage-menu">
-									<li><a href="#tcd-banner">Home</a></li>
+									<li><Link to="/" href="#tcd-banner">Home</Link></li>
 
 
 									<li><a href="#tcd-services">Services</a></li>
 
 									<li><a href="#tcd-team">Team</a></li>
 
-									<li><a to="#tcd-blog" href="../blog/index.jsx">Blog</a></li>
+									<li><Link to="/Inscription" >Inscrepition</Link></li>
 
 									<li><a href="#tcd-footer">Contact</a></li>
 								</ul>
@@ -57,16 +58,16 @@ function Header() {
 									</div>
 								</div>
 							</div>
-							<div className="search hidden-md">
+						{/* 	<div className="search hidden-md">
 								<a 
 									className="tc-search" 
 									data-target=".search-modal" 
 									data-toggle="modal" 
-									href="#"
+									href="#1"
 								>
 									<i className="fa fa-search"></i>
 								</a>
-							</div>
+							</div> */}
 						</Col>
 					</Row>
 	            </Container>

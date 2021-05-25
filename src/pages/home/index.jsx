@@ -6,12 +6,10 @@ import Team from '../../components/team'
  
 function HomePage() {
 	return (
-		<div>
+		<div style={{width:"100%"}}>
 			{/* Banner Part */}
 			<Banner />
 
-			{/* Team Part */}
-			<Team />
 
 			{/* Service Part */}
 			<Services />	
